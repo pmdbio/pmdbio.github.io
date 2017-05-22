@@ -16,7 +16,7 @@ Já faz alguns dias, durante uma conversa casual em que expunha minha insatisfa�
 
 Um dado interessante que o SAGE possui é o número de casos notificados, em investigação, confirmados e descartados de microcefalia e/ou alterações do sistema nervoso central (SNC), sugestivos de infecção congênita por zika vírus em fetos, abortamentos, natimortos ou recém-nascidos.
 
-O gráfico original disponível no site é este aqui.
+O gráfico original disponível no site é este aqui (clique para ver em tamanho maior).
 
 <a href="http://sage.saude.gov.br/lib/svg2img.php?w=1790&h=250"><img src="/images/canvas.png"></a>
 
