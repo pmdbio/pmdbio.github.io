@@ -33,9 +33,9 @@ Bom, vamos ao trabalho.
 
 A primeira coisa que devemos fazer é baixar o arquivo e lê-lo. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
 
-[engrenagem.png](/_images/engrenagem.png")
+[engrenagem.png](/_images/engrenagem.png)
 
-[engrenagem2.png]("/_images/engrenagem2.png")
+[engrenagem2.png](/_images/engrenagem2.png)
 
 
 #### Lendo o arquivo
