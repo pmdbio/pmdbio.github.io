@@ -380,3 +380,6 @@ legend(x = par('usr')[1]+diff/4+(diff/8)*3, y = par('usr')[3]-7000,
 ```
 
 ![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-16-1.png)
+
+
+{% include fblike_first.html %}
