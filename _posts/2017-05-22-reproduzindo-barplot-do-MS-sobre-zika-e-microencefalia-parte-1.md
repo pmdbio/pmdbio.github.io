@@ -1,13 +1,4 @@
 ---
-title: "Reproduzindo barplot do MS sobre zika e microencefalia (Parte 1, no R)"
-author: "Luís Telles"
-date: "22 de maio de 2017"
-output: md_document
----
-
-
-
----
 title: Reproduzindo gráfico de colunas do MS sobre zika/microcefalia (Parte 1, no
   R)
 layout: post
