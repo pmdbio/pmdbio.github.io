@@ -8,6 +8,8 @@ tags:
 - example1
 - example2
 published: yes
+documentclass: article
+classoption: a4paper
 ---
 
 ## Reproduzindo um barplot do Ministério da Saúde sobre casos de microcefalia e zika (em R e Python)
