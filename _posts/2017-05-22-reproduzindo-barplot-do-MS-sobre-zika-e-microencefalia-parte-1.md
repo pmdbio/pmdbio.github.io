@@ -118,7 +118,7 @@ Ok, mas ainda não terminamos com essa etapa. Se você tentar construir o gráfi
 barplot(zika_matrix)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-6-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-6-1.png)
 
 Hmm… não é bem isso que nós desejamos, né. O que aconteceu? O R entendeu que cada valor dentro de uma **coluna da matriz** era pra ser uma **sub-coluna do gráfico**. Em outras palavras, ele criou um gráfico de colunas empilhadas. Para obter um gráfico com as colunas lado-a-lado (e não empilhadas) devemos usar o argumento ```beside=TRUE```. Veja a diferença:
 
@@ -192,7 +192,7 @@ Assim a função barplot vai entender que **cada coluna da matriz contém quatro
 barplot(zika_matrix, beside = TRUE, xaxt = "n")
 ```
 
-[center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
 
 Se você for um leitor atento, verá que adicionei o argumento ```xaxt="n"```. Isso quer dizer, 'tipo do eixo X é igual a nenhum', ou seja, eu suprimi o eixo X. Fiz Isso porque antes eu havia nomeado as linhas da matriz (as linhas se tornaram colunas na matriz transposta) com as semanas epidemiológicas. Se eu deixasse do jeito que estava o R iria produzir um eixo X automaticamente usando essas semanas e eu não quero isso. Siga em frente que você verá eu adicionando um novo eixo X e aí você entenderá o porquê.
 
