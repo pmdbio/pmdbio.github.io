@@ -19,11 +19,11 @@ Um dado interessante que o SAGE possui é o número de casos notificados, em inv
 
 O gráfico original disponível no site é este aqui.
 
-![canvas.png](/_images/canvas.png)
+![canvas.png](/images/canvas.png)
 
 Para encontrá-lo clique na aba 'Situação de Saúde' e depois em 'Microcefalia e Zika' no menu que irá aparecer.
 
-Pensei em reproduzir esse gráfico tanto em R como em Python pra que vocês possam aprender um tipo de gráfico que tem algumas peculiaridades e não é tão fácil de fazer, além de poder comparar as duas linguagens ao realizarem a mesma tarefa. Deixo claro aqui que a linguagem que uso há mais tempo é o R (que também é minha favorita! hehe). Comecei a aprender Python este ano depois de muita resistência, então é possível que, de repente, o código do Python ainda possa ser otimizado. Você pode baixar o script em R utilizado para esse post [aqui](/_scripts/zika_r_base.R). Para saber qual o tamanho real do código necessário para fazer este gráfico olhe o script.
+Pensei em reproduzir esse gráfico tanto em R como em Python pra que vocês possam aprender um tipo de gráfico que tem algumas peculiaridades e não é tão fácil de fazer, além de poder comparar as duas linguagens ao realizarem a mesma tarefa. Deixo claro aqui que a linguagem que uso há mais tempo é o R (que também é minha favorita! hehe). Comecei a aprender Python este ano depois de muita resistência, então é possível que, de repente, o código do Python ainda possa ser otimizado. Você pode baixar o script em R utilizado para esse post [aqui](/scripts/zika_r_base.R). Para saber qual o tamanho real do código necessário para fazer este gráfico olhe o script.
 
 Antes de mergulhar no post... você precisa saber que o que será tratado aqui contém conteúdo de nível intermediário-avançado em R. Portanto, se você nunca viu um código R antes ou se ainda está nos primeiros passos na linguagem, **minha recomendação é que você não leia esse post**, caso contrário irá se asssutar! hahaha Nesse caso, considere se inscrever no meu curso de [introdução à programação com R](http://programmedbiology.weebly.com/curso-r-r-course). Se ainda assim você estiver curioso, pode ir em frente, mas eu avisei! Se você já tem fluência no R e deseja aprimorar suas habilidades com base graphics, esse post é para você!
 
@@ -33,9 +33,9 @@ Bom, vamos ao trabalho.
 
 A primeira coisa que devemos fazer é baixar o arquivo e lê-lo. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
 
-![engrenagem.png](/_images/engrenagem.png)
+![engrenagem.png](/images/engrenagem.png)
 
-![engrenagem2.png](/_images/engrenagem2.png)
+![engrenagem2.png](/images/engrenagem2.png)
 
 
 #### Lendo o arquivo
@@ -45,7 +45,7 @@ Iniciamos lendo o arquivo utilizando a função ```read.csv()``` estipulando o d
 
 ```r
 # Lendo o arquivo csv
-zika <- read.csv('../_data/sage_ms_zika_casos_2016.csv',
+zika <- read.csv('/data/sage_ms_zika_casos_2016.csv',
                  stringsAsFactors = FALSE)
 ```
 
@@ -127,7 +127,7 @@ Hmm… não é bem isso que nós desejamos, né. O que aconteceu? O R entendeu q
 barplot(zika_matrix, beside = TRUE)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-7-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-7-1.png)
 
 
 #### Transpondo a matriz
@@ -192,7 +192,7 @@ Assim a função barplot vai entender que **cada coluna da matriz contém quatro
 barplot(zika_matrix, beside = TRUE, xaxt = "n")
 ```
 
-[center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
+[center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
 
 Se você for um leitor atento, verá que adicionei o argumento ```xaxt="n"```. Isso quer dizer, 'tipo do eixo X é igual a nenhum', ou seja, eu suprimi o eixo X. Fiz Isso porque antes eu havia nomeado as linhas da matriz (as linhas se tornaram colunas na matriz transposta) com as semanas epidemiológicas. Se eu deixasse do jeito que estava o R iria produzir um eixo X automaticamente usando essas semanas e eu não quero isso. Siga em frente que você verá eu adicionando um novo eixo X e aí você entenderá o porquê.
 
@@ -207,7 +207,7 @@ barplot(zika_matrix,
         col = c('green', 'purple', 'red', 'black'))
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-11-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-11-1.png)
 
 Utilizando o argumento ```las=1``` na função ```barplot()```, podemos alterar a orientação dos números nos eixos:
 
@@ -221,7 +221,7 @@ barplot(zika_matrix,
         las = 1)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-12-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-12-1.png)
 
 
 #### Eixos
@@ -255,7 +255,7 @@ text(x = barp[2,]-2, y = par('usr')[3]-2000,
      srt=45, xpd = TRUE, cex = .7)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-13-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-13-1.png)
 
 
 
@@ -268,7 +268,7 @@ title(xlab = 'Semana Epidemiológica', line = 4)
 title(ylab = 'Casos', line = 4)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-14-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-14-1.png)
 
 
 
@@ -311,7 +311,7 @@ legend(x = par('usr')[1]+diff/4+(diff/8)*3, y = par('usr')[3]-7000,
        xpd = TRUE, horiz = TRUE, bty = "n", cex = .8)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-15-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-15-1.png)
 
 
 #### Conclusão
@@ -380,4 +380,4 @@ legend(x = par('usr')[1]+diff/4+(diff/8)*3, y = par('usr')[3]-7000,
        border = FALSE)
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-16-1.png)
+![center](/outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-16-1.png)
