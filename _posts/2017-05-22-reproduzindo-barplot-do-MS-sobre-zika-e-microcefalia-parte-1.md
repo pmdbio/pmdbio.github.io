@@ -383,3 +383,4 @@ legend(x = par('usr')[1]+diff/4+(diff/8)*3, y = par('usr')[3]-7000,
 
 
 {% include fblike_first.html %}
+{% include fbcomment_first.html %}
