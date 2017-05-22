@@ -19,7 +19,7 @@ Um dado interessante que o SAGE possui é o número de casos notificados, em inv
 
 O gráfico original disponível no site é este aqui.
 
-<img src="../_images/canvas.png" alt="gráfico sage" width=1000 height=500>
+![canvas.png]("/_images/canvas.png")
 
 Para encontrá-lo clique na aba 'Situação de Saúde' e depois em 'Microcefalia e Zika' no menu que irá aparecer.
 
@@ -33,9 +33,9 @@ Bom, vamos ao trabalho.
 
 A primeira coisa que devemos fazer é baixar o arquivo e lê-lo. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
 
-<img src="/../_images/engrenagem.png" title="center" alt="center" width="900px" />
+![engrenagem.png](/_images/engrenagem.png")
 
-<img src="/../_images/engrenagem2.png" title="center" alt="center" width="900px" />
+![engrenagem2.png]("/_images/engrenagem2.png")
 
 
 #### Lendo o arquivo
