@@ -30,7 +30,7 @@ Mais pra frente divulgarei uma outra versão deste post feita  com o pacote *ggp
 
 Bom, vamos ao trabalho.
 
-A primeira coisa que devemos fazer é baixar o arquivo e lê-lo. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
+A primeira coisa que devemos fazer é baixar o arquivo contendo os dados. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
 
 ![engrenagem.png](/images/engrenagem.png)
 
