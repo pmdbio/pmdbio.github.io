@@ -13,7 +13,7 @@ published: yes
 ## Reproduzindo um barplot do Ministério da Saúde sobre casos de microcefalia e zika (em R e Python)
 ### Parte 1 (usando R)
 
-Já faz alguns dias, durante uma conversa casual em que expunha minha insatisfação em relação às dificuldades para se encontrar dados abertos em formato acessível através de sites de órgãos públicos, fiquei sabendo da existência de alguns portais do governo que, apesar de ainda não atenderem a todas as minhas expectativas, já ajudam bastante. O primeiro é o SAGE (Sala de Apoio à Gestão Estratégica/MS), cujo endereço é http://sage.saude.gov.br. O segundo é o Portal Brasileiro de Dados Abertos, cujo endereço é http://dados.gov.br/.
+Já faz alguns dias, durante uma conversa casual em que expunha minha insatisfação em relação às dificuldades para se encontrar dados abertos em formato acessível através de sites de órgãos públicos, fiquei sabendo da existência de alguns portais do governo que, apesar de ainda não atenderem a todas as minhas expectativas, já ajudam bastante. O primeiro é o [SAGE (Sala de Apoio à Gestão Estratégica/MS)](http://sage.saude.gov.br). O segundo é o [Portal Brasileiro de Dados Abertos](http://dados.gov.br/).
 
 Um dado interessante que o SAGE possui é o número de casos notificados, em investigação, confirmados e descartados de microcefalia e/ou alterações do sistema nervoso central (SNC), sugestivos de infecção congênita por zika vírus em fetos, abortamentos, natimortos ou recém-nascidos.
 
