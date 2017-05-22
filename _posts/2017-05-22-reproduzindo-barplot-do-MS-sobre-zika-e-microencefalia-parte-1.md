@@ -19,7 +19,7 @@ Um dado interessante que o SAGE possui é o número de casos notificados, em inv
 
 O gráfico original disponível no site é este aqui.
 
-![canvas.png](_images/canvas.png)
+![canvas.png](/_images/canvas.png)
 
 Para encontrá-lo clique na aba 'Situação de Saúde' e depois em 'Microcefalia e Zika' no menu que irá aparecer.
 
