@@ -43,7 +43,7 @@ Iniciamos lendo o arquivo utilizando a função ```read.csv()``` estipulando o d
 
 
 ```r
-# Lendo o arquivo csv
+# Lendo o arquivo csv (renomeei o arquivo)
 zika <- read.csv('/data/sage_ms_zika_casos_2016.csv',
                  stringsAsFactors = FALSE)
 ```
