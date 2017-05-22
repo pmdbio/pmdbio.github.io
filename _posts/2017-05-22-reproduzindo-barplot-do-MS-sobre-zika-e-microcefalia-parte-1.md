@@ -317,7 +317,7 @@ legend(x = par('usr')[1]+diff/4+(diff/8)*3, y = par('usr')[3]-7000,
 
 Que tal? Uff... que trabalheira hein... Pois é. Como disse acima, fazer um gráfico desses não é o trabalho mais trivial do mundo. Mas não deixa de ser muito legal! hehehe
 
-Se você gostou desse post e tem interesse em aprender mais sobre R fique de olho no site [Programmed Biology](http://programmedbiology.weebly.com/curso-r-r-course) para fazer sua inscrição em algum dos meus cursos. Fique à vontade para me enviar uma mensagem particular também no e-mail lu\*is.augusto@\*yah\*oo.co\*m.br (retire os asteriscos).
+Se você gostou desse post e tem interesse em aprender mais sobre R fique de olho no site [Programmed Biology](http://programmedbiology.weebly.com/curso-r-r-course) para fazer sua inscrição em algum dos meus cursos. Fique à vontade para me enviar uma mensagem particular também no [e-mail](pmdbio@gmail.com).
 
 Tentarei liberar a segunda parte dessa série com o mesmo gráfico reproduzido em Python até Quinta-Feira dessa semana. Não deixe de checar!
 
