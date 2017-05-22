@@ -33,9 +33,9 @@ Bom, vamos ao trabalho.
 
 A primeira coisa que devemos fazer é baixar o arquivo e lê-lo. Baixe o arquivo ‘file.csv’ clicando na engrenagem e depois no botão indicado.
 
-![engrenagem.png](/_images/engrenagem.png")
+[engrenagem.png](/_images/engrenagem.png")
 
-![engrenagem2.png]("/_images/engrenagem2.png")
+[engrenagem2.png]("/_images/engrenagem2.png")
 
 
 #### Lendo o arquivo
@@ -192,7 +192,7 @@ Assim a função barplot vai entender que **cada coluna da matriz contém quatro
 barplot(zika_matrix, beside = TRUE, xaxt = "n")
 ```
 
-![center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
+[center]({{site.url}}/_outimages/2017-05-22-reproduzindo-barplot-do-MS-sobre-zika-e-microencefalia-parte-1/unnamed-chunk-10-1.png)
 
 Se você for um leitor atento, verá que adicionei o argumento ```xaxt="n"```. Isso quer dizer, 'tipo do eixo X é igual a nenhum', ou seja, eu suprimi o eixo X. Fiz Isso porque antes eu havia nomeado as linhas da matriz (as linhas se tornaram colunas na matriz transposta) com as semanas epidemiológicas. Se eu deixasse do jeito que estava o R iria produzir um eixo X automaticamente usando essas semanas e eu não quero isso. Siga em frente que você verá eu adicionando um novo eixo X e aí você entenderá o porquê.
 
